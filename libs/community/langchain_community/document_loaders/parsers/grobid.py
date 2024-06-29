@@ -140,7 +140,7 @@ class GrobidParser(BaseBlobParser):
                 params=None,
                 files=files,
                 data=data,
-                timeout=60,
+                timeout=600,
             )
             xml_data = r.text
         except requests.exceptions.ReadTimeout:
